@@ -1,0 +1,23 @@
+Project Setup Flow for 'functions' Folder:
+
+1. Created the project directory structure:
+   - Created a new folder named 'functions' for the project.
+   - Inside 'functions', created a subfolder 'mylib' for custom library code.
+
+2. Created 'mylib.go' in 'mylib' folder:
+   - Wrote all necessary helper and custom functions in 'mylib/mylib.go'.
+
+3. Created 'main.go' in the project root:
+   - Imported and utilized the functions from 'mylib/mylib.go' in 'main.go'.
+
+4. Initialized Go module:
+   - Ran `go mod init functions` in the root of the 'functions' folder to initialize the Go module.
+   - This generated the 'go.mod' file for dependency management.
+
+5. (Optional but recommended) Tidied up dependencies:
+   - Ran `go mod tidy` to ensure all dependencies are properly managed (if any external packages are used).
+
+6. Ran the project:
+   - Used `go run main.go` to build and execute the project, utilizing the custom functions from 'mylib'.
+
+This flow ensures a modular, maintainable Go project structure with clear separation between main application logic and reusable library code.

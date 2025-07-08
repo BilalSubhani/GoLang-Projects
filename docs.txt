@@ -1,0 +1,19 @@
+ 1. Install go on your system from 
+    url: https://go.dev/dl/
+ 2. After installation, check if go has been added to your environment variable by using following in cmd
+    go version 
+
+Day 1:
+> Covered displaying data on console using "fmt.Println"
+> Covered variables (package and function level, initialized and uninitialized)
+> Covered fucntions (In same file and my creating custom modules)
+> Covered different types of functions (Return, Void, Return multiple)
+> Covered Logical and arithmetic operators
+> Covered if and switch statements, for loop
+> Note: To run your program, use following
+    go run main.go
+> Note: To create your custom module "go.mod" file, use following
+    go mod init <module_path>
+
+Day 2:
+> 

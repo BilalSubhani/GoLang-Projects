@@ -1,8 +1,16 @@
+
+>> Installation 
  1. Install go on your system from 
     url: https://go.dev/dl/
  2. After installation, check if go has been added to your environment variable by using following in cmd
     go version 
 
+>> Commands
+1. go version
+2. go run main.go
+3. go mod init <module_path>
+
+>> Documentation
 Day 1:
 > Covered displaying data on console using "fmt.Println"
 > Covered variables (package and function level, initialized and uninitialized)
@@ -16,4 +24,9 @@ Day 1:
     go mod init <module_path>
 
 Day 2:
-> 
+> Covered arrays: declaration, default values, initialization
+> Covered accessing and modifying array elements
+> Covered iterating over arrays
+> Covered passing arrays as parameters to functions
+> Covered returning arrays from functions
+> Covered multi-dimensional (2D) arrays

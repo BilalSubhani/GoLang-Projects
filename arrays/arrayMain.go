@@ -1,7 +1,7 @@
 package main
 
 import (
-	"arrayLib/myarray"
+	"arrays/arraylib"
 	"fmt"
 )
 
@@ -9,23 +9,23 @@ func main() {
 	fmt.Println("--- Array Declaration ---")
 	myarray.DeclareArray()
 
-	fmt.Println("--- Array Initialization ---")
+	fmt.Println("\n\n--- Array Initialization ---")
 	myarray.InitializeArray()
 
-	fmt.Println("--- Accessing and Modifying Array ---")
+	fmt.Println("\n\n--- Accessing and Modifying Array ---")
 	myarray.AccessArray()
 
-	fmt.Println("--- Iterating Array ---")
+	fmt.Println("\n\n--- Iterating Array ---")
 	myarray.IterateArray()
 
-	fmt.Println("--- Passing Array as Parameter ---")
+	fmt.Println("\n\n--- Passing Array as Parameter ---")
 	arr := [3]int{7, 8, 9}
 	myarray.ArrayAsParameter(arr)
 
-	fmt.Println("--- Returning Array from Function ---")
+	fmt.Println("\n\n--- Returning Array from Function ---")
 	returned := myarray.ReturnArray()
 	fmt.Println("Returned array:", returned)
 
-	fmt.Println("--- Multi-dimensional Array ---")
+	fmt.Println("\n\n--- Multi-dimensional Array ---")
 	myarray.MultiDimensionalArray()
 }

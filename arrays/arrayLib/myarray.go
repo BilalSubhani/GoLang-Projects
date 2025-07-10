@@ -27,7 +27,7 @@ func IterateArray() {
 	arr := [4]int{10, 20, 30, 40}
 	fmt.Print("Iterating array:")
 	for i, v := range arr {
-		fmt.Printf(" Index %d: %d;", i, v)
+		fmt.Printf("\n Index %d: %d;", i, v)
 	}
 	fmt.Println()
 }
@@ -48,5 +48,5 @@ func MultiDimensionalArray() {
 	var matrix [2][3]int
 	matrix[0][1] = 7
 	matrix[1][2] = 9
-	fmt.Println("2D array (matrix):", matrix)
+	fmt.Println("2D array (matrix):\n", matrix)
 }

@@ -30,3 +30,42 @@ Day 2:
 > Covered passing arrays as parameters to functions
 > Covered returning arrays from functions
 > Covered multi-dimensional (2D) arrays
+
+Day 3:
+> Explored Go's slices and maps in depth, covering both basic and intermediate concepts through hands-on examples and explanations.
+
+---
+
+Slices:
+- Learned how to declare and initialize slices, including nil slices, empty slices, and slices with values.
+- Practiced creating slices using the make function, specifying both length and capacity.
+- Explored slicing arrays and other slices to create new slices referencing the same underlying array.
+- Used the append function to add elements to slices, including appending multiple elements and appending one slice to another.
+- Demonstrated copying slices using the copy function.
+- Iterated over slices using range, and modified slice elements by index.
+- Examined the difference between the length and capacity of a slice, and how they change as the slice grows.
+- Compared nil and empty slices, and discussed their properties.
+- Worked with multi-dimensional (2D) slices for representing matrices or tables.
+- Showed how to remove an element from a slice by index using slicing and append.
+- Passed slices to functions, highlighting that slices are reference types and changes inside functions affect the original slice.
+- Illustrated how assigning one slice to another creates a reference, not a copy.
+- Observed how slice capacity grows as elements are appended in a loop.
+- Created slices of structs and slices of interface{} to store heterogeneous data.
+- Noted that slices cannot be compared with == except for nil checks, and that deep equality requires the reflect package.
+- Demonstrated that appending to a nil slice is valid and results in a working slice.
+
+Maps:
+- Covered declaration and initialization of maps, including nil maps, maps created with make, and map literals.
+- Accessed map values by key, and checked for key existence using the "comma ok" idiom.
+- Iterated over maps using range to access keys and values.
+- Used the delete function to remove keys from a map, including deleting non-existent keys (which is safe and does not panic).
+- Checked the length of a map using len.
+- Created maps with slice values (map of slices) and slices containing maps (slice of maps).
+- Used structs as map values and as map keys (noting restrictions on key types).
+- Passed maps to functions, demonstrating that maps are reference types and changes in functions affect the original map.
+- Assigned one map to another, showing that both variables reference the same underlying data.
+- Initialized a nil map with make before assigning values.
+- Built nested maps (maps whose values are themselves maps).
+- Created maps with interface{} values to store mixed types.
+- Noted that maps cannot be compared with == except for nil checks, and that Go does not expose map capacity, though a capacity hint can be provided to make.
+- Mentioned that concurrent access to maps is unsafe and requires special handling (e.g., sync.Map).
